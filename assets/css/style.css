@@ -11,9 +11,9 @@ body {
     margin: 0;
 }
 
-/*styling the header where the logo and search bar live*/
+/*styling the header where the logo and search bar live; WHY ARE HTE MOVIES IN THE HEADER?*/
 header {
-    background-color: black;
+    background-color: rgb(107, 107, 107);
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
@@ -22,7 +22,7 @@ header {
 /*Styling the logo "Movie App" in header*/
 h2 {
     text-align:left;
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline;
     float: left;
 }
@@ -58,7 +58,7 @@ main {
 .movie {
     width: 250px;
     margin: 2rem;
-    background-color: black;
+    background-color: rgb(179, 187, 210);
     box-shadow: 0 4px 5px black;
     position: relative;
     overflow: hidden;
