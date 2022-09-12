@@ -32,7 +32,7 @@ async function getMovies(apiUrl) {
             movieEl.innerHTML = `
                 <img src="${IMG_PATH + cImgPath}" alt="${cTitle}">
                 <div class="movie-info">
-              <h3>${cTitle}</h3>
+              <h3>"${cTitle}"</h3>
               <span class="${nVote}">${nVote}</span>
                 </div>
                 <div class="overview">
@@ -40,7 +40,7 @@ async function getMovies(apiUrl) {
               ${cOverView}
             </div>
             `
-            main.appendChild(movieEl)
+            mainEl.appendChild(movieEl)
 
             }
 
