@@ -37,7 +37,7 @@ async function getMovies(apiUrl) {
                 </div>
                 <div class="overview">
               <h3>Overview</h3>
-              ${cOverView}
+              ${cOverView}git
             </div>
             `
             mainEl.appendChild(movieEl)
