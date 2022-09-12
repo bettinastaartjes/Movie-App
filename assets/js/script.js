@@ -4,6 +4,7 @@ const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=14bd8f982f89e1b1a206780215c62b44&query="';
 
 const formEl = document.getElementById('form')
+const mainEl = document.getElementById('main')
 const searchEl = document.getElementById('search')
 
 // Get initial movies
@@ -24,19 +25,30 @@ async function getMovies(apiUrl) {
             cOverView  = movies[i].overview    ;
 
 
-          }
 
-/*
-            //console.log(dataUrl.results) ;
-            console.log(dataUrl)
+            const movieEl = document.createElement('div')
+            movieEl.classList.add('movie')
+    
+            movieEl.innerHTML = `
+                <img src="${IMG_PATH + cImgPath}" alt="${cTitle}">
+                <div class="movie-info">
+              <h3>${cTitle}</h3>
+              <span class="${nVote}">${nVote}</span>
+                </div>
+                <div class="overview">
+              <h3>Overview</h3>
+              ${cOverView}
+            </div>
+            `
+            main.appendChild(movieEl)
 
-            dataUrl.forEach((dataUrl) => {
+            }
 
-                
-                console.log(poster_path)  ;
-            // console.log(cTitle);   
-            // console.log(nVote);
-            // console.log(cOverView);
-*/
-            
-          })}})}
+          
+          })
+        }
+
+}
+)}
+
+
