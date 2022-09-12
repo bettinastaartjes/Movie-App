@@ -23,6 +23,8 @@ header {
 h2 {
     text-align:left;
     color: white;
+    display: inline;
+    float: left;
 }
 
 /* styling the search button area*/

@@ -10,9 +10,12 @@
 <body>
     <header>
         <h2>Movie App</h2>
+        <!--Search Form-->
         <form id="form">
-            <!--Search Form-->
-            <input type="text" id="search" class="search" placeholder="Search For A Movie">
+            <form action="/form/submit" method="GET">
+                <input type="text" name="text" id=search class="search" placeholder="Search For A Movie">
+                <input type="submit" name="submit" id="submit" class="submit" value="Search">
+            </form>
         </form>
 
         <main id="main">
