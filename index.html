@@ -10,16 +10,23 @@
 </head>
 <body>
     <header>
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <h2>Movie App</h2>
-            </div>
+        <table id="header-space">
+            <tr>
+                <td>
+
+        <!-- <div class="row">
+            <div class="col-xs-12 col-md-6"> -->
+                    <h2>Movie App</h2>
+            <!-- </div> -->
+
+                </td>
 
             <!--<div class="col-xs-12 col-md-6">-->
             
                 <!--Search Form-->              <!-- <form id="form"> -->
                 <form id="form" action="/form/submit" method="GET">
-                    <div class="col-xs-12 col-md-3">
+                    <!-- <div class="col-xs-12 col-md-3"> -->
+                    <td id="center">
                     <input type="radio" id="html" name="movie_type" value="Popular">
                     <label for="Popular">Popular</label>
                     <input type="radio" id="css" name="movie_type" value="Kids">
@@ -28,17 +35,22 @@
                     <label for="Best">Best Movies</label>
                     <input type="radio" id="css" name="movie_type" value="Drama">
                     <label for="Drama">Drama</label>
-                    </div>
+                    </td>
+                    <!-- </div> -->
 
 
-                    <div class="col-xs-12 col-md-3">
+                    <!-- <div class="col-xs-12 col-md-3"> -->
+                    <td>
                     <input type="text" name="text" id=search class="search" placeholder="Search For A Movie">
                     <input type="submit" name="submit" id="submit" class="submit" value="Search">
-                    </div>
+                    <!-- </div> -->
+                    </td>
                 </form>
             <!-- </form> -->
             <!--</div>-->
-        </div>
+            </tr>
+        </table>
+        <!-- </div> -->
     </header>
 
     <div class="row" id="main">
