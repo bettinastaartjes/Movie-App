@@ -21,7 +21,7 @@ header {
 
 /*Styling the logo "Movie App" in header*/
 h2 {
-    text-align:left;
+    /*text-align:left;*/
     color: rgb(0, 0, 0);
     display: inline;
     float: left;
@@ -49,6 +49,9 @@ h2 {
     background-color: white;
 }
 
+.form {
+    background-color: yellow;
+}
 /*styling movie/main area*/
 main {
     display: flex;
