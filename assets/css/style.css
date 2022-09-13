@@ -24,6 +24,10 @@ td {
     width: 800px;
 }
 
+tr {
+    background-color: yellow;
+}
+
 /* .center{
     justify-content: center;
 } */
@@ -32,6 +36,7 @@ td {
 h2 {
     /*text-align:left;*/
     color: rgb(0, 0, 0);
+    background-color: aqua;
     display: inline;
     /*float: left;*/
 }
