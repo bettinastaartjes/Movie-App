@@ -1,7 +1,15 @@
+/* What are the most popular movies? */
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=14bd8f982f89e1b1a206780215c62b44&page=1';
 // const IMG_PATH = "https://image.tmdb.org/t/p/w500/" ;   W500 is the web size
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=14bd8f982f89e1b1a206780215c62b44&query="';
+
+/* 
+Other API calls
+---------------
+https://www.themoviedb.org/documentation/api/discover
+*/
+
 
 const formEl = document.getElementById('form')
 const mainEl = document.getElementById('main')
@@ -13,7 +21,11 @@ getMovies(API_URL)
 async function getMovies(apiUrl) {
     fetch(apiUrl).then(function(apiUrl) {
         if (apiUrl.ok) {
+          // Clean <DIV>
+          main.innerHTML = '' ;
+
           apiUrl.json().then(function(dataUrl) {
+
 
             movies    = dataUrl.results      ;
             totMovies = dataUrl.total_results;
@@ -50,6 +62,7 @@ async function getMovies(apiUrl) {
                 <img src="${IMG_PATH + cImgPath}" alt="${cTitle}">
                 <div class="movie-info">
               <h3>"${cTitle}"</h3>
+              <span class="${nVote}">${nVote}</span>
                 </div>
                 <div class="overview">
               <h3>Overview</h3>
