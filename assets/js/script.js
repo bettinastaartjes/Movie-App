@@ -13,7 +13,11 @@ getMovies(API_URL)
 async function getMovies(apiUrl) {
     fetch(apiUrl).then(function(apiUrl) {
         if (apiUrl.ok) {
+          // Clean <DIV>
+          main.innerHTML = '' ;
+
           apiUrl.json().then(function(dataUrl) {
+
 
             movies    = dataUrl.results      ;
             totMovies = dataUrl.total_results;
@@ -50,6 +54,7 @@ async function getMovies(apiUrl) {
                 <img src="${IMG_PATH + cImgPath}" alt="${cTitle}">
                 <div class="movie-info">
               <h3>"${cTitle}"</h3>
+              <span class="${nVote}">${nVote}</span>
                 </div>
                 <div class="overview">
               <h3>Overview</h3>
