@@ -98,8 +98,8 @@ async function getMovies(apiUrl) {
               <span class="${nVote}">${nVote}</span>
                 </div>
                 <div class="overview">
-              <h3>Overview</h3>
-              ${cOverView}git
+              <h3>OVERVIEW</h3>
+              ${cOverView}
             </div>
             `
             mainEl.appendChild(movieEl)

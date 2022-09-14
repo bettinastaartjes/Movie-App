@@ -99,7 +99,7 @@ main {
 }
 
 .movie {
-    width: 250px;
+    width: 200px;
     margin: 2rem;
     background-color: rgb(179, 187, 210);
     box-shadow: 0 4px 5px black;
@@ -112,9 +112,11 @@ main {
     width: 100%;
 }
 
-/* Styling the rating*/
+/* Styling the rating... I want this to be to the right of the title of the movie*/
 .movie-info span {
     background-color: black;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -137,17 +139,24 @@ main {
 
 /*Styling the movie title text in the div*/
 .movie-info h3 {
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
     color: black;
 }
 
   /*Overview Section -- IF I MAKE THIS WHITE, PARTS OF THE TITLE DON'T SHOW*/
+  /*Overview text itself*/
+  .overview h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:rgb(114, 33, 185);
+    font-weight: bolder;
+  }
+  /*Overview summary text/box*/
   .overview {
-    background-color: transparent;
-    padding: .5rem;
-    color: purple;
-    font-size: 10px;
+    color: black;
+    font-size: 12px;
     padding: .5rem .5rem;
     
   }
