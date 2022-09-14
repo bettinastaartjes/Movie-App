@@ -146,7 +146,7 @@ formEl.addEventListener('submit', (e) => {
           case "Popular":
             getMovies('https://api.themoviedb.org/3/search/movie?sort_by=popularity.desc&api_key=14bd8f982f89e1b1a206780215c62b44&page=1&query="'+searchTerm+'"') ;
             break;
-          case "Kids":
+          case "R":  // "Kids":
             getMovies('https://api.themoviedb.org/3/search/movie?certification_country=US&certification=R&sort_by=vote_average.desc&api_key=14bd8f982f89e1b1a206780215c62b44&page=1&query="'+searchTerm+'"') ;
             break;
           case "Best":
@@ -166,7 +166,7 @@ formEl.addEventListener('submit', (e) => {
           case "Popular":
             getMovies('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=14bd8f982f89e1b1a206780215c62b44&page=1') ;
             break;
-          case "Kids":
+          case "R":  // "Kids":
             getMovies('https://api.themoviedb.org/3/discover/movie?certification_country=US&certification=R&sort_by=vote_average.desc&api_key=14bd8f982f89e1b1a206780215c62b44&page=1') ;
             break;
           case "Best":
