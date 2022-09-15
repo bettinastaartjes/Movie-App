@@ -14,6 +14,9 @@ As a user, I want a film application showing the top 20 films of the season with
 Deploy the website and navigate through the website using this link: https://bettinastaartjes.github.io/Movie-App/
 
 # 3. Usage
+
+Link to GitHub Repo: https://github.com/bettinastaartjes/Movie-App
+
 The website can be deployed with the following link: https://bettinastaartjes.github.io/Movie-App/
 
 After deploying the website the user can see popular films and search for a film in the searchbar at the top right as shown below!
