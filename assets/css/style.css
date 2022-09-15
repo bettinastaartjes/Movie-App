@@ -1,3 +1,5 @@
+/*Linking Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:wght@500&display=swap');
 
 *{
     box-sizing: border-box;
@@ -7,25 +9,39 @@
 body {
     background-color: blue;
     background-image: linear-gradient(to right, purple, navy);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
-/*styling the header where the logo and search bar live; WHY ARE HTE MOVIES IN THE HEADER?*/
+/*Styling the Movie App title*/
+h2 {
+    font-family: 'Jomhuria', cursive;
+    font-size: 100px;
+}
+
+/*styling the header where the logo and search bar live*/
 header {
-    background-color: rgb(107, 107, 107);
-    padding: 1rem;
+    background-color: rgb(0, 0, 0);
     display: flex;
     /* justify-content: flex-end; */
 }
 
 /* .header-space{ */
-td {
-    width: 800px;
+    td {
+        width: 1000px;
+      }
+
+.submit {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(114, 33, 185);
+    color: white;
+    font-size: 10px;
+    border-radius: 10px;
 }
 
+/* table row element! this styles the color where logo, radio buttons and search  live*/
 tr {
-    background-color: yellow;
+    background-color: black;
 }
 
 /* .center{
@@ -35,26 +51,36 @@ tr {
 /*Styling the logo "Movie App" in header*/
 h2 {
     /*text-align:left;*/
-    color: rgb(0, 0, 0);
-    background-color: aqua;
+    color: white;
     display: inline;
+    padding: 4rem;
     /*float: left;*/
+}
+
+/*Styling the text of the radio buttons*/
+label {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    letter-spacing: .01ch;
+    font-size: 20px;
 }
 
 /* styling the search button area*/
 .search {
     background-color: white;
     border: 2px solid white;
-    border-radius: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    padding: 0.5 rem 1 rem;
     color: black;
 }
 
 /*styling placeholder text in search box*/
 .search::placeholder {
     color: purple;
+    text-align: left;
+    font-size: 14px;
+    font-style: italic;
 }
 
 /*styling for when we click inside the search bar*/
@@ -73,7 +99,7 @@ main {
 }
 
 .movie {
-    width: 250px;
+    width: 200px;
     margin: 2rem;
     background-color: rgb(179, 187, 210);
     box-shadow: 0 4px 5px black;
@@ -86,10 +112,61 @@ main {
     width: 100%;
 }
 
+/* Styling the rating... I want this to be to the right of the title of the movie*/
 .movie-info span {
-    background-color: var(--primary-color);
+    background-color: black;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
     padding: 0.25rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: bold;
+  }
+/*Styling the ratings so they change color*/
+  .movie-info span.green {
+    color: lightgreen;
+  }
+  
+
+  .movie-info span.orange {
+    color: orange;
+  }
+
+
+  .movie-info span.red {
+    color: red;
+  }
+
+/*Styling the movie title text in the div*/
+.movie-info h3 {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+  /*Overview Section -- IF I MAKE THIS WHITE, PARTS OF THE TITLE DON'T SHOW*/
+  /*Overview text itself*/
+  .overview h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:rgb(114, 33, 185);
+    font-weight: bolder;
+  }
+  /*Overview summary text/box*/
+  .overview {
+    color: black;
+    font-size: 12px;
+    padding: .5rem .5rem;
+  }
+
+  footer {
+    background-color: black;
+    margin: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 2rem;
   }
   
