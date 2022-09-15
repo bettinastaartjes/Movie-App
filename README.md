@@ -8,7 +8,7 @@
 5. License
 
 # 1. User Story
-As a user, I want a film application showing the top 10 films of the season with a short description of what the film is about so that I can decide what film to watch without being directed to a different page or link. 
+As a user, I want a film application showing the top 20 films of the season with a short description of what the film is about so that I can decide what film to watch without being directed to a different page or link. 
 
 # 2. Installation 
 Deploy the website and navigate through the website using this link: https://bettinastaartjes.github.io/Movie-App/
