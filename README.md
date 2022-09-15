@@ -7,22 +7,22 @@
 4. Credits
 5. License
 
-# User Story
+# 1. User Story
 As a user, I want a film application showing the top 10 films of the season with a short description of what the film is about so that I can decide what film to watch without being directed to a different page or link. 
 
-# Installation 
+# 2. Installation 
 Deploy the website and navigate through the website using this link: https://bettinastaartjes.github.io/Movie-App/
 
-# Usage
+# 3. Usage
 The website can be deployed with the following link: https://bettinastaartjes.github.io/Movie-App/
 
 After deploying the website the user can see popular films and search for a film in the searchbar at the top right as shown below!
 <img src = "assets/final-movie-app.png" title="Movie App" alt="Movie App"/>
 
-# Credits
+# 4. Credits
 The creators of this app were Benny Gabel, Bettina Staartjes, and Gladimar Villamil. We used Bootstrap as a framework and FlexBox.
 
-# License
+# 5. License
 MIT License
 
 Copyright (c) [2022]
