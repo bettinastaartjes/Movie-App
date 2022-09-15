@@ -28,8 +28,8 @@ header {
 
 /* .header-space{ */
     td {
-        width: 800px;
-    }
+        width: 1000px;
+      }
 
 .submit {
     font-family: 'Open Sans', sans-serif;
@@ -79,7 +79,7 @@ label {
 .search::placeholder {
     color: purple;
     text-align: left;
-    font-size: 11px;
+    font-size: 14px;
     font-style: italic;
 }
 
