@@ -1,7 +1,7 @@
 
 # Movie-App
 
-README Items:
+# README Items:
 1. User story
 2. Installation
 3. Usage
@@ -15,11 +15,11 @@ As a user, I want a film application showing the top 10 films of the season with
 Deploy the website and navigate through the website using this link:
 https://bettinastaartjes.github.io/Movie-App/
 
- 3. ## Usage
-    1. The website can be deployed with the following link:
+3. ## Usage
+    1. The website can be deployed with the following link: 
 
     2. After deploying the website the user can see popular films and search for a film in the searchbar at the top right as shown below
-![Screenshot of the website](./assets/Screen%20Shot%202022-09-14%20at%208.52.23%20PM.png)
+![Screenshot of the website]<img src= "./assets/Screen%20Shot%202022-09-14%20at%208.52.23%20PM.png"/>
 
  
 4. ## Credits
