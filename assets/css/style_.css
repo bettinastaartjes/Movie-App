@@ -28,8 +28,9 @@ header {
 
 /* .header-space{ */
     td {
-        width: 1000px;
-      }
+        /*width: 2000px;*/
+        width:33%;
+    }
 
 .submit {
     font-family: 'Open Sans', sans-serif;
@@ -62,9 +63,8 @@ label {
     font-family: 'Open Sans', sans-serif;
     color: white;
     letter-spacing: .01ch;
-    font-size: 20px;
+    font-size: 20px;  /*15px;*/
 }
-
 /* styling the search button area*/
 .search {
     background-color: white;
@@ -163,15 +163,10 @@ main {
   footer {
     background-color: black;
     margin: 0;
-    /* color: white; */
-    /* color: yellow; */
-    color:yellowgreen;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     text-align: center;
     padding: 2rem;
-    font-family: 'Jomhuria', cursive;
-    font-size: 35px;
-    
   }
   
