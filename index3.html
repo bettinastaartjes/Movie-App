@@ -10,11 +10,15 @@
 </head>
 <body>
     <header class="flex-container">
-        <form id="form" action="/form/submit" method="GET">
-            <div>
-                <h2>Movie App</h2>
-            </div>
-            <div class="movie_opt">
+        <div>
+            <h2>Movie App</h2>
+        </div>
+        <div class="movie_opt">
+
+            <!-- <div >Movie type</div> -->
+            <div class="row">
+                <div class="col-6">Movie type</div>
+                <div class="col-6">
                 <input type="radio" id="Popular" name="movie_type" value="Popular" checked>
                 <label for="Popular">Popular</label><br>
 
@@ -26,12 +30,13 @@
                 
                 <input type="radio" id="Drama" name="movie_type" value="Drama">
                 <label for="Drama">Drama</label><br>
+                </div>
             </div>
-            <div class="src_section">
-                <input type="text" name="text" id=search class="search" placeholder="    Search For A Movie..."> <br>
-                <input type="submit" name="submit" id="submit" class="submit" value="Search">
-            </div>                
-        </form>  
+        </div>
+        <div class="src_section">
+            <input type="text" name="text" id=search class="search" placeholder="    Search For A Movie..."> <br>
+            <input type="submit" name="submit" id="submit" class="submit" value="Search">
+        </div>                
     </header>
 
 

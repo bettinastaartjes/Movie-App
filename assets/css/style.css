@@ -24,12 +24,13 @@ header {
     background-color: rgb(0, 0, 0);
     display: flex;
     /* justify-content: flex-end; */
+    justify-content: space-between;
 }
 
-/* .header-space{ */
+/* .header-space{ 
     td {
         width: 1000px;
-      }
+      } */
 
 .submit {
     font-family: 'Open Sans', sans-serif;
@@ -37,12 +38,13 @@ header {
     color: white;
     font-size: 10px;
     border-radius: 10px;
+    width: 210px;
 }
 
 /* table row element! this styles the color where logo, radio buttons and search  live*/
-tr {
+/* tr {
     background-color: black;
-}
+} */
 
 /* .center{
     justify-content: center;
@@ -55,6 +57,17 @@ h2 {
     display: inline;
     padding: 4rem;
     /*float: left;*/
+}
+
+.src_section{
+    display: block;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    
+    flex-direction: column;
+    /* align-items: center; */
+    padding-top: 30px;
+
 }
 
 /*Styling the text of the radio buttons*/
@@ -89,13 +102,26 @@ label {
     background-color: white;
 }
 
-.form {
-    background-color: yellow;
+#form {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
 }
+
+/* .form {
+    display: flex;
+    background-color: yellow;
+} */
+
+.flex-container { 
+    flex-direction: row;
+} 
+
 /*styling movie/main area*/
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .movie {
@@ -163,15 +189,74 @@ main {
   footer {
     background-color: black;
     margin: 0;
-    /* color: white; */
-    /* color: yellow; */
     color:yellowgreen;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     font-family: 'Jomhuria', cursive;
     font-size: 35px;
+    
+  }
+  
+/* BG  TEST   -   BEGINNING */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.movie_opt{
+    /* display: flex; */
+    display: block;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    
+    flex-direction: column;
+    
+    /* display: inline; */
+    vertical-align: middle;
+
+    /* isplay: flex;align-items: center;justify-content: center;flex-direction: column; width: 100%; text-align: center; margin: 10% 0; min-height: 20 */
+  }
+  
+  
+@media screen and  (max-width: 800px) {
+   /* .flex-container { */
+   #form{     
+        flex-direction: column;
+        align-items: center;
+   }
+
+}
+
+@media screen and  (max-width: 800px) {
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }  
+}
+
+/* BG  TEST   -   END */
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and  (max-width: 600px) {
+    #form{
+      transform: scale(.7)
+    }
+
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    h2 {
+        /*text-align:left;*/
+        color: white;
+        display: inline;
+        padding: 1rem;
+        font-size: 50px;
+        /*float: left;*/
+    }
     
   }
   
